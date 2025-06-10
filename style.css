@@ -1,0 +1,121 @@
+body {
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f5f7fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.logo-cnp {
+    width: 40px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.landing-page {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 70px;
+    border-bottom: 2px solid;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid;
+
+}
+
+.left-content {
+    /* border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-left: solid 2px; */
+    padding: 0 5px;
+}
+
+.mid-content {
+    /* border: solid 2px; */
+    padding: 5px;
+    border-style: solid;
+    border-width: 0px 2px;
+}
+
+.rigth-content {
+    /* border-bottom: solid 2px;
+    border-top: solid 2px;
+    border-right: solid 2px; */
+    padding: 5px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea';
+    padding-bottom: 110px;
+}
+
+.item1 {
+    grid-area: myArea;
+    padding: 0 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.item2,
+.item3,
+.item4 {
+    border: 1px solid;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 25px;
+}
+
+.card-reviews p {
+    margin: 0 auto;
+}
+
+.reviews-text {
+    padding-bottom: 20px;
+}
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid;
+    margin-bottom: 500px;
+}
