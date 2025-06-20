@@ -6,6 +6,8 @@ body {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px; /* Tambahkan padding agar konten tidak menempel di tepi layar */
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar elemen */
 }
 
 header {
@@ -13,12 +15,14 @@ header {
     top: 0;
     z-index: 1;
     background: #f5f7fa;
+    padding: 10px 0; /* Tambahkan padding untuk header */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Penting: agar item bisa wrap ke baris berikutnya jika tidak muat */
 }
 
 .logo-wrapper {
@@ -41,46 +45,42 @@ header {
     gap: 40px;
     padding: 0 20px;
     list-style: none;
+    margin: 0; /* Hapus margin default ul */
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
+    white-space: nowrap; /* Mencegah teks link pecah baris(belum menemukan perubahannya) */
 }
 
 .landing-page {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 70px;
+    padding: 70px 0;
     border-bottom: 2px solid;
 }
 
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
     border-bottom: 2px solid;
-
 }
 
-.left-content {
-    /* border-top: solid 2px;
-    border-bottom: solid 2px;
-    border-left: solid 2px; */
-    padding: 0 5px;
+.left-content,
+.mid-content,
+.rigth-content {
+    padding: 15px; /* Tambahkan padding ke setiap konten */
+    /* Hapus border individual jika ingin border hanya di grid container */
+    /* border-style: solid; */
+    /* border-width: 1px; */
 }
 
 .mid-content {
-    /* border: solid 2px; */
-    padding: 5px;
-    border-style: solid;
-    border-width: 0px 2px;
-}
-
-.rigth-content {
-    /* border-bottom: solid 2px;
-    border-top: solid 2px;
-    border-right: solid 2px; */
-    padding: 5px;
+    border-left: 2px solid;
+    border-right: 2px solid;
 }
 
 .reviews {
