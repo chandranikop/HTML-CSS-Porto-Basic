@@ -72,6 +72,12 @@ header {
     border-bottom: 2px solid;
 }
 
+.landing-page h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -89,9 +95,30 @@ header {
     /* border-width: 1px; */
 }
 
+.left-content h2,
+.mid-content h2,
+.rigth-content h2 {
+    margin-bottom: 15px;
+}
+
+.left-content p,
+.mid-content p,
+.rigth-content p {
+    margin-bottom: 8px;
+}
+
 .mid-content {
     border-left: 2px solid;
     border-right: 2px solid;
+}
+
+.rigth-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.rigth-content li {
+    margin-bottom: 8px;
 }
 
 .reviews {
