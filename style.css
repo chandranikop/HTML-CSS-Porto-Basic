@@ -77,6 +77,9 @@ header {
     color: black;
     margin-bottom: 15px;
 }
+.landing-page p {
+    font-size: 1.1rem;
+}
 
 .project {
     display: grid;
@@ -148,14 +151,14 @@ header {
     border: 1px solid black;
     border-radius: 30px;
     padding: 20px;
-}
-
-.card-reviews p {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews-text {
     padding-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
 footer {
